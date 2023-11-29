@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+    <title>Hotel Potter | Página Inicial</title>
+    <link rel="shortcut icon" href="img/Logo.png">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body id="body">
+
+    <header class="container">
+        <a href="index.html"><img src="img/Logo.png" alt="Imagem da logomarca do hotel"></a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="dormitorios.html">Dormitórios</a>
+                </li>
+                <li>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="banquete.html">Banquete</a>
+                </li>
+                <li>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="atracoes.html">Atrações</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="container">
+        <div class="introducao" id="introducao">
+            <img src="img/imagem-hotel.png" alt="Imagem de um castelo ao estilo da obra Harry Potter">
+            <div>
+                <h1>Hotel Potter</h1>
+                <p>Adentre ao "Hotel das Varinhas", onde a magia abraça sua estadia! Cada quarto é um conto encantado e
+                    cada sorriso da equipe é um feitiço de bem-vindos. Prepare-se para uma estadia mágica e relaxante.
+                    Bem-vindo ao nosso hotel, onde a magia é real!</p>
+            </div>
+        </div>
+
+
+
+    </main>
+
+    <section>
+        <h2>EM DESTAQUE</h2>
+        <div class="carrossel">
+            <div>
+                <h3>Suíte Dumbleodore</h3>
+                <a href="dormitorios.html" class="btn">Saiba mais</a>
+            </div>
+
+        </div>
+
+        <div class="destaque-responsivo">
+            <h3>Suíte Dumbleodore</h3>
+            <a href="dormitorios.html" class="btn">Saiba mais</a>
+        </div>
+    </section>
+
+
+
+    <div class="modal-bg-login visible" id="modal-bg-login">
+        <div>
+
+            <h2>Descubra a senha de acesso</h2>
+            <img src="img/mapa-marotos.png" alt="Imagem do Mapa dos marotos, como dica para a senha">
+            <form action="javascript:login()">
+                <input type="text" placeholder="Insira seu nome" id="nome" required autocomplete="off">
+                <input type="password" placeholder="Insira a senha" id="senha" autocomplete="off">
+                <button class="btn acess" type="submit">ACESSAR</button>
+            </form>
+            <p id="senha-errada"></p>
+
+        </div>
+    </div>
+
+    <div class="efeito-sumir">
+        <img src="img/varinha.svg" alt="Imagem representando uma varinha da Obra Harry Potter">
+        <a onclick="openModal()">
+            <p>
+                MALFEITO FEITO
+            </p>
+        </a>
+
+    </div>
+
+
+
+    <script src="index.js">
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+.dormitorio-presidencial {
+    background-image: url("img/quarto-presidencial.png");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+}
+
+.dormitorio-presidencial div {
+    background-color: rgba(74, 43, 16, 80%);
+    height: 400px;
+    max-width: 350px;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.dormitorio-presidencial h3 {
+    font-size: 48px;
+    padding-top: 60px;
+}
+
+.dormitorio-presidencial p {
+    font-size: 32px;
+}
+
+.valor {
+    color: #FFDF9E;
+}
+
+.btn::before {
+    height: 41px;
+}
+
+.btn::after {
+    height: 41px;
+}
+
+
+h1 {
+    text-align: center;
+    color: #AA8855;
+}
+
+h1::after, h1::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: rgb(136, 100, 16);
+    rotate: 45deg;
+    margin-bottom: 10px;
+}
+
+h1::after {
+    margin-left: 10px;
+}
+
+h1::before{
+    margin-right: 10px;
+}
+
+
+.grifinoria {
+    border: 2px solid #A6243D;
+}
+
+.sonserina {
+    border: 2px solid #35513D;
+}
+
+.corvinal {
+    border: 2px solid #045A76;
+}
+
+.lufa-lufa {
+    border: 2px solid #FEFD87;
+}
+
+h2::after, h2::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background-color: rgb(136, 100, 16);
+    rotate: 45deg;
+    margin-bottom: 7px;
+}
+
+h2::after {
+    margin-left: 10px;
+}
+
+h2::before{
+    margin-right: 10px;
+}
+
+.quartos, .drinks {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 40px 50px; 
+    flex-wrap: wrap;
+}
+
+.quarto-item img:hover{
+    scale: 110%;
+}
+
+.quarto-item img, .drinks img {
+    max-width: 225px;
+    height: 168px;
+    border-radius: 12px;
+}
+
+.grifinória {
+    border: 2px solid #A6243D;
+}
+
+.drink-item img {
+    border: 2px solid #A9760B;    
+}
+
+.drink-item:hover{
+    scale: 105%;
+}
+
+.felix-felicis {
+    background-color: rgba(169, 168, 11, 25%)
+}
+
+.cerveja-amanteigada {
+    background-color: rgba(146, 82, 42, 25%);
+}
+
+.pocao-polissuco {
+    background-color: rgba(70, 76, 44, 25%);
+}
+
+.amortentia {
+    background-color: rgba(218, 100, 86, 25%);
+}
+
+.sapos {
+    background-color: rgba(59, 66, 100, 25%);
+}
+
+.feijoes {
+    background-color: rgba(183, 182, 178, 25%);
+}
+
+
+
+

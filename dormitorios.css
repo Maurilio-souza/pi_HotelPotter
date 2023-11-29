@@ -1,0 +1,144 @@
+.modal-bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    max-width: 635px;
+    background-color: rgba(255, 255, 255, 0.83);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    color: black;
+    padding: 20px;
+    border-radius: 13px;
+    font-size: 15px;
+    align-items: center;
+}
+
+.modal img {
+    max-width: 225px;
+    border-radius: 12px;
+}
+
+.modal-bg-reserva-concluida {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-reserva {
+    background-color: rgba(255, 255, 255, 0.83);
+    text-align: center;
+    padding: 25px;
+    border-radius: 13px;
+    color: black;
+    max-width: 580px;
+}
+
+.modal-reserva p {
+    font-weight: bold;
+}
+
+.reserva {
+    text-align: center;
+}
+
+.reserva button {
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.reserva h3 {
+    color: black;
+    font-size: 32px;
+}
+
+.reserva input {
+    padding: 5px;
+    margin: 10px;
+    width: 90%;
+    border-radius: 4px;
+}
+
+.reserva-lista{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    gap: 5px;
+    max-width: 90%;
+    padding: 10px 0;
+}
+
+input::placeholder{
+    color: white;
+}
+
+input {
+    color: white;
+}
+
+#checkin, #checkout {
+    cursor: pointer;
+}
+
+#valor {
+    cursor: default;
+}
+
+.form {
+    display: flex;    
+}
+
+.grifinoria-input {
+    background-color: #A0120C;
+    
+}
+
+.sonserina-input {
+    background-color: #249A25;
+}
+
+.lufa-input {
+    background-color: #D4A90C;
+}
+
+.corvinal-input {
+    background-color: #0593B9;
+}
+
+.dumbleodore-input{
+    background-color: #FB4313;
+}
+
+button {
+    color: white;
+}
+
+@media screen and (max-width: 675px) {
+    .modal {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 4px;
+    }
+}

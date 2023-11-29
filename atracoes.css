@@ -1,0 +1,50 @@
+.carousel-caption {
+    background-color: rgba(67, 65, 65, 0.65)
+}
+
+.carousel-inner {
+    border: 1px solid #CE820F;
+}
+
+header {
+    margin-top: 10px !important;
+    padding: 0;
+}
+
+.span-estilizado {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 1fr;
+    align-items: center;
+}
+
+.span-estilizado span {
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+    background-color: #A9760B;
+}
+
+header a:hover {
+    
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .carousel-inner {
+        overflow: visible !important;
+    }
+    .carousel-caption {
+        display: block !important;
+        bottom: -205px;
+    }
+}
+
+
+

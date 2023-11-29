@@ -1,0 +1,286 @@
+body {
+    background-color: black;
+    background-image: url("img/Fundo.png");
+    color: white;
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header ul {
+    display: flex;
+    gap: 20px;
+}
+
+header ul li span {
+    content: "";
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    background-color: rgb(136, 100, 16);
+    rotate: 45deg;
+    margin-left: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: #FCF5E7;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+.introducao {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    max-width: 70%;
+    margin: 50px auto;
+}
+
+
+
+h1 {
+    font-size: 50px;
+    color: rgb(215, 175, 100);
+}
+
+h2 {
+    font-size: 40px;
+    color: #AA8855;
+    text-align: center;
+}
+
+.introducao p {
+    font-size: 32px;
+}
+
+.carrossel {
+    background-image: url("img/quarto-presidencial.png");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+    margin-bottom: 150px;
+}
+
+.carrossel div {
+    background-color: rgba(74, 43, 16, 80%);
+    height: 400px;
+    max-width: 350px;
+    text-align: center;
+    margin-left: 5%;
+    
+}
+
+.carrossel h3 {
+    font-size: 48px;
+    padding-top: 75px;
+}
+
+.btn {
+    color: #fcf5e7;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background-color: #0000;
+    background-image: url("btn_bg.svg");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+    border: none;
+    height: 46px;
+    margin: 0 26px;
+    padding: 10px;
+    font-family: bluu_nextbold,Crimson Text,serif;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.4em;
+    position: relative;
+}
+
+.btn::before {
+    content: "";
+    background-image: url("btn_left.svg");
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: calc(100% + 1px) 100%;
+    width: 27px;
+    height: 46px;
+    display: block;
+    position: absolute;
+    left: -26px;
+    top: 0px;
+}
+.btn::after {
+    content: "";
+    background-image: url("btn_right.svg");
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: calc(100% + 1px) 100%;
+    width: 27px;
+    height: 46px;
+    display: block;
+    position: absolute;
+    right: -27px;
+    top: 0px;
+}
+
+@media screen and (max-width: 1135px) {
+    .introducao {
+        grid-template-columns: 1fr;
+    }
+    .introducao img {
+        margin: 0 auto;
+    }
+    .introducao div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .carrossel div, .dormitorio-presidencial div {
+        display: none;
+    }
+    .destaque-responsivo {
+        display: block !important;
+        margin-bottom: 150px;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .introducao img {
+        width: 100%
+    }
+}
+
+.destaque-responsivo h3{
+    font-size: 48px;
+}
+
+.destaque-responsivo {
+    text-align: center;
+    display: none;   
+}
+
+.active {
+    text-decoration: underline;
+}
+
+h5 {
+    font-family: 'Harry Potter', sans-serif; 
+                                                
+}
+
+.modal-bg-login {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-bg-login img {
+    max-width: 100%;
+    margin: 0 auto;
+    opacity: 60%;
+}
+
+.modal-bg-login div {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.modal-bg-login form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.modal-bg-login p {
+    display: none;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.modal-bg-login input {
+    border-radius: 6px;
+    padding: 8px;
+    font-size: 20px;
+}
+
+.modal-bg-login input::placeholder {
+    color: black;
+    font-size: 20px;
+    
+}
+
+.efeito-sumir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.efeito-sumir a{
+    cursor: pointer;
+}
+
+.efeito-sumir p {
+    font-size: 25px;
+    background-color: #A88654;
+    padding: 5px;
+    border-radius: 5px;
+    
+}
+
+.acess {
+    cursor: pointer;
+}
+
+
